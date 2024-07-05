@@ -1,0 +1,12 @@
+h2{
+    color: brown;
+}
+#a1{
+    color: #ea00ff;
+}
+.a2{
+    color: palevioletred;
+}
+.a2,#a1{
+    background-color: yellowgreen;
+}
