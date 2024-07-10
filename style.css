@@ -1,5 +1,8 @@
 h2{
     color: rgb(15, 18, 235);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 #a1{
     color: #173319;
@@ -10,4 +13,5 @@ h2{
 .a2,#a1{
     background-color: rgba(224, 232, 233, 0.356);
 }
+
 
