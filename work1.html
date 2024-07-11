@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+    position: relative;
+}
+.topleft{
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    font-size: 17px;
+}
+img{
+    width: 1000px;
+    height: 500px;
+    opacity:0.6;
+}
+.topright{
+    position: absolute;
+    bottom: 480px;
+    left: 920px;
+    right: 0px;
+    font-size: 17px;
+}
+.centered{
+    position: absolute;
+    bottom: 250px;
+    left: 500px;
+}
+.bottomleft{
+    position: absolute;
+    bottom: 10px;
+
+}
+.bottomright{
+    position: absolute;
+    bottom: 10px;
+    left: 900px;
+
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="touann-gatouillat-vergos-dSBJv66Yjlk-unsplash.jpg" width="1000px" height="500px">
+        <div class="topleft">topleft</div>
+    </div>
+    <div class="container">
+        <div class="topright">topright</div>
+        <div class="centered">centered</div>
+        <div class="bottomleft">bottomleft</div>   
+        <div class="bottomright">bottomright</div>
+    </div>
+</body>
+</html>
