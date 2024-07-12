@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+          opacity: 0.3;
+        }
+        
+        img:hover {
+          opacity: 0.9;
+        }
+         p::first-line{ 
+            color: blueviolet;
+            font-variant: small-caps;
+        } 
+        p::first-letter{
+            color: blue;
+            font-variant: small-caps;
+        }
+        p::selection{
+            color: brown;
+            background-color: yellow;
+        }
+        div.background{
+            background: url(pexels-pixabay-268533.jpg);
+            border: 2px solid;
+        }
+        div.transbox{
+            margin: 30px;
+            background-color: rgb(165, 165, 49);
+            border: 2px;
+            opacity: 0.4;
+        }
+        div.transbox p{
+            margin: 5px;
+
+            font-weight: bold;}
+            
+        </style>
+</head>
+<body>
+    <img src="pexels-pixabay-268533.jpg" alt="" width="200" height="200">
+    <img src="touann-gatouillat-vergos-dSBJv66Yjlk-unsplash.jpg" alt="" width="200" height="200">
+     <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+<div class="background">
+    <div class="transbox">
+         <p >This is some text that is placed in the transparent box</p> 
+    </div>
+</div>
+<div>
+
+</body>
+</html>

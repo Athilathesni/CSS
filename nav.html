@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width:300px ;
+            background-color:white;
+            position: fixed;
+            overflow: auto;
+            height: 200px;
+        }
+    li a{
+        display: block;
+        color:black;
+        padding: 8px 16px;
+        text-decoration: none;
+    }  
+li a.active {
+  background-color:green;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: gray;
+  color: white;
+  }
+</style>
+</head>
+<body>
+    <h2>vertical navigation bar</h2>
+<div><ul>
+    <li><a class="active" href="#home">home</a></li>
+    <li><a href="news">news</a></li>
+    <li><a href="content">content</a></li>
+    <li><a href="about">about</a>
+    </li>
+</ul></div>
+<div style="margin-left:300px ;padding: 1px 16px; height: 1000px;">
+    <h3>fixed full height nav</h3>
+    <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus obcaecati, debitis laudantium tempore dolorum consectetur explicabo amet repudiandae porro quam eos, suscipit ducimus totam voluptates recusandae sequi repellat, nihil hic.</p>
+    <p>some text...</p>
+    <p>some text...</p>
+    <p>some text...</p>
+    <p>some text...</p>
+    <p>some text...</p>
+    <p>some text...</p>
+    <p>some text...</p>
+</div>
+</body>
+</html>
