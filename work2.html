@@ -10,38 +10,87 @@
         .sub{grid-area: sub;}
         .img{grid-area: img;}
         .msg{grid-area: msg;}
+        .button{grid-area: button;}
         .main{
             display: grid;
             grid-template-areas: 'head head head head nav nav'
             'sub sub sub sub img img'
-            'msg msg msg msg img img';
+            'msg msg msg msg img img'
+            'button button button button img img';
+            grid-template-rows: 60px 400px 90px 80px;
             background-color: lightblue;
             padding: 10px;
         }
         .head{
             background-color: gray;
+            text-align: center;
+            padding: 10px;
         }
         .nav{
-            background-color: rgb(160, 123, 123);
+            background-color: rgb(126, 99, 99);
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            display:flex;
+            justify-content: space-around;
+        }
+        .nav a{
+            text-decoration: none;
         }
         .sub{
-            background-color: rgb(66, 37, 37);
+            background-color: rgb(221, 202, 202);
+            text-align: center;
         }
         .img{
             background-color: rgb(226, 154, 154);
+            
         }
         .msg{
             background-color: rgb(170, 68, 68);
+            text-align: center;
         }
+        .button{
+            background-color: rgb(88, 37, 37);
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+        }
+        .b1{
+            background-color: green;
+            flex: 50%;
+            padding: 10px;
+        }
+        .b2{
+            background-color: rgb(87, 146, 87);
+            flex: 50%;
+            padding: 10px;
+        }
+        
     </style>
 </head>
 <body>
     <div class="main">
-        <div class="head">head</div>
-        <div class="nav">nav</div>
-        <div class="sub">sub</div>
-        <div class="img">img</div>
-        <div class="msg">msg</div>
+        <div class="head"><h2>Web Diary</h2></div>
+        <div class="nav"><a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </div>
+
+
+
+        <div class="sub">
+            <h2>CSS GRID EXAMPLE</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ipsa quae. Quo totam, numquam nesciunt eveniet ipsum minima quos perferendis rem sunt saepe placeat, accusantium nemo odit quia ab corporis.</P>
+        </div>
+        <div class="img">
+            <img src="pexels-jovana-nesic-188639-593655.jpg" alt="" height="570px" width="300px">
+        </div>
+        <div class="msg"><h2>"Lorem ipsum dolor sit amet"</h2></div>
+        <div class="button">
+            <div class="b1">Read more </div>
+             <div class="b2">View all</div>
+        </div>
     </div>
 </body>
 </html>
