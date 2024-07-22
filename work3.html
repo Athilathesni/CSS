@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+        }
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+        .nav{
+            display: flex;
+            background-color:gray;
+        }
+        .nav a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover{
+            background-color: antiquewhite;
+            color: black;
+        }
+        .row {  
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side {
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+        @media screen and (max-width: 700px) {
+        .row, .navbar {   
+        flex-direction: column;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div style="background-color: yellowgreen; padding: 5px;">
+        <h3 style="text-align: center;">resize the browser window to see the responsive effect</h3>
+    </div>
+<div class="header">
+    <h1>myb website</h1>
+    <p>with a <b>fexible</b>layout</p>
+</div>
+<div class="nav">
+    <a href="">link</a>
+    <a href="">link</a>
+    <a href="">link</a>
+    <a href="">link</a>
+</div>
+<div class="row">
+    <div class="side">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3>More Text</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <div class="fakeimg" style="height:60px;">Image</div><br>
+      <div class="fakeimg" style="height:60px;">Image</div><br>
+      <div class="fakeimg" style="height:60px;">Image</div>
+    </div>
+    <div class="main">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, aliquam a provident impedit consectetur minus fugiat deleniti ratione perferendis enim delectus illum sint. Odit dolorum sint est blanditiis beatae? Eum?</p>
+      <br>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque qui tenetur natus repellendus cum repellat, voluptatum possimus commodi magnam. Labore cupiditate reprehenderit vel voluptates quasi molestias inventore maiores doloremque sed!</p>
+    </div>
+  </div>
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+</body>
+</html>
