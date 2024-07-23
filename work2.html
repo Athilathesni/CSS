@@ -13,11 +13,13 @@
         .button{grid-area: button;}
         .main{
             display: grid;
-            grid-template-areas: 'head head head head nav nav'
+            grid-template-areas: 
+            'head head head head nav nav'
             'sub sub sub sub img img'
             'msg msg msg msg img img'
             'button button button button img img';
-            grid-template-rows: 60px 400px 90px 80px;
+            grid-template-rows: 70px 300px 50px 100px;
+            width: 50%;
             background-color: lightblue;
             padding: 10px;
         }
@@ -66,7 +68,18 @@
             flex: 50%;
             padding: 10px;
         }
-        
+        @media screen and(max-width:800px){
+            .main{
+            grid-template-areas: 
+            'head head head head'
+            'nav nav nav nav'
+            'sub sub sub sub'
+            'img img img img'
+            'msg msg msg msg'
+            'button button button button';
+            grid-template-rows: 60px 60px 250px 250px 100px 100px;
+        }
+    }
     </style>
 </head>
 <body>
@@ -76,15 +89,12 @@
         <a href="">About</a>
         <a href="">Contact</a>
     </div>
-
-
-
         <div class="sub">
             <h2>CSS GRID EXAMPLE</h2>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ipsa quae. Quo totam, numquam nesciunt eveniet ipsum minima quos perferendis rem sunt saepe placeat, accusantium nemo odit quia ab corporis.</P>
         </div>
         <div class="img">
-            <img src="pexels-jovana-nesic-188639-593655.jpg" alt="" height="570px" width="300px">
+            <img src="pexels-jovana-nesic-188639-593655.jpg" alt="" height="450px" width="300px">
         </div>
         <div class="msg"><h2>"Lorem ipsum dolor sit amet"</h2></div>
         <div class="button">
